@@ -5,9 +5,12 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "now-build": "node node.js"
+    "now-build": "echo 'Nothing to build ...'",
+    "start": "node app.js"
   },
   "dependencies": {
-    "graphql-yoga": "1.16.7"
+    "bufferutil": "4.0.0",
+    "graphql-yoga": "1.16.7",
+    "utf-8-validate": "5.0.1"
   }
 }
