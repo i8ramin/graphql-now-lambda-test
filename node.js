@@ -1,11 +1,4 @@
-// const http = require('http')
-// const { PORT = 3000 } = process.env
-
-// http.createServer((req, res) => {
-//   res.end('Hello World from app.js\n')
-// }).listen(PORT)
-
-const { GraphQLServer } = require('graphql-yoga')
+const { GraphQLServerLambda } = require('graphql-yoga')
 
 const typeDefs = `
   type Query {
@@ -19,13 +12,11 @@ const resolvers = {
   }
 }
 
-const server = new GraphQLServer({
+const lambda = new GraphQLServerLambda({
   typeDefs,
-  resolvers,
-  context: req => ({ ...req })
+  resolvers
 })
-const { PORT = 3000 } = process.env
 
-server.start({
-  port: PORT
-}, ({ port }) => console.log(`Server is running on PORT ${port}`))
+// exports.server = lambda.graphqlHandler
+// exports.handler = lambda.handler
+module.exports = lambda.handler

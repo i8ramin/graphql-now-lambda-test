@@ -3,7 +3,8 @@
   "public": false,
   "version": 2,
   "builds": [
-    { "src": "node.js", "use": "@now/node-server" },
-    { "src": "lambda.js", "use": "@now/node" }
+    { "src": "node-server.js", "use": "@now/node-server" },
+    { "src": "node.js", "use": "@now/node" },
+    { "src": "lambda.js", "use": "@now/lambda" }
   ]
 }
