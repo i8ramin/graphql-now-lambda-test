@@ -4,6 +4,9 @@
   "main": "handler.js",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "now-build": "node node.js"
+  },
   "dependencies": {
     "graphql-yoga": "1.16.7"
   }

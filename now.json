@@ -3,6 +3,7 @@
   "public": false,
   "version": 2,
   "builds": [
-    { "src": "handler.js", "use": "@now/lambda" }
+    { "src": "node.js", "use": "@now/node-server" },
+    { "src": "lambda.js", "use": "@now/node" }
   ]
 }
