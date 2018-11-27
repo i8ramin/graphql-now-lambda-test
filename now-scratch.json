@@ -1,0 +1,2 @@
+{ "src": "node.js", "use": "@now/node" },
+{ "src": "node-server.js", "use": "@now/node-server" },

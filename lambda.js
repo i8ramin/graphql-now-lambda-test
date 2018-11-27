@@ -17,6 +17,6 @@ const lambda = new GraphQLServerLambda({
   resolvers
 })
 
-// exports.server = lambda.graphqlHandler
+exports.server = lambda.graphqlHandler
 // exports.handler = lambda.handler
-module.exports = lambda.handler
+// module.exports = lambda.handler

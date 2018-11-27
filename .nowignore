@@ -1,1 +1,4 @@
 node_modules
+.upignore
+now-scratch.json
+up.*
